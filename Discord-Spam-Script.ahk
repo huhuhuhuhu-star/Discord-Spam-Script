@@ -17,8 +17,8 @@ If SpamLoop {
 SpamLoop := True
 Loop {                      ; Add a number after "Loop" if you want it to loop a specific number of times
     Loop 9 {                ; The amount of messages it sends before waiting (default = 9)
-        SendInput :smiley:   ; Change ":smiley:" to whatever you want
-        SendInput {Enter}
+        SendInput m!m   ; Change ":smiley:" to whatever you want
+        SendInput {enter}
         Sleep, 800
         if not SpamLoop
             break
